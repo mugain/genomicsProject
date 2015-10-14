@@ -93,5 +93,5 @@ for fasta in referenceProject.fa contigs.fa
 		# search sequence for selected genes
 		tblastn -query genesProject.fa -db $fasta -outfmt 7 -out ../results/$fasta.blast.txt
 done
-#counting number of sequences in fastq file
+#counting number of sequences in fasta file
 grep ">" contigs.fa | wc -l> ../results/contigsNumber.txt
